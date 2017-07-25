@@ -5,7 +5,7 @@
 #
 
 # Force my HOME (sudo compatibility)
-export DEFAULT_USER="rtfpessoa"
+export DEFAULT_USER="Carlos"
 
 # want your terminal to support 256 color schemes? I do ...
 export TERM="xterm-256color"
@@ -247,12 +247,12 @@ PATH="$HOME/.cargo/bin:$PATH"
 export PATH
 
 if [[ "$OSTYPE" =~ "darwin" && "$ZSH_NAME" = "zsh" && -z "$TMUX" && -z "$EMACS" && -z "$VIM" && -z "$SSH_TTY" ]]; then
-  tmux_session='rtfpessoa'
+  tmux_session='Carlos'
   tmux start-server
 
   # Create a '$tmux_session' session if no session has been defined in tmux.conf
   if ! tmux has-session 2> /dev/null; then
-    tmux_session='rtfpessoa'
+    tmux_session='Carlos'
     tmux new-session -d -s "$tmux_session"
   fi
 
